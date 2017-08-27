@@ -1,0 +1,27 @@
+<h1><center> Welcome to Shitter! </center></h1>
+
+<h2><center> Share your thoughts on shitter! make sure to make your voice heard </center></h2>
+	
+	<form action="/peep" method = "POST" style = 'margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	padding-top: 20px;
+	display: block;
+	margin: auto;'><center>
+
+	<textarea rows="4" cols="50" name="boop">
+	Share your peeps here... </textarea>
+
+	  <input type="submit">
+
+	</form></center>
+
+
+<h2><center> Check out the peeps below! </center></h2>
+	<ul id ='peeps'><center>
+		<% @peeps.each do |peep| %>
+		<li>
+			Chit!! => <%= peep.chit %>
+		</li>
+		<% end %>
+	</ul></center>
